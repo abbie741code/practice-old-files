@@ -9,16 +9,38 @@
 </head>
 
 <body>
-    123
+    6/29 Obj練習
 
     <script>
         // 創造一個man為空白物件
-        let man = new object();
+        let man = new Object();
           // 物件.成員名稱=資料
-        man.age = 18; 
+        man.age = 28; 
         man.name = 'John';
+        man.talk = function(){
+            // 物件的方法中,使用this,代表物件本身
+            console.log('hi我是',this.name,'年齡',this.age)
+        };
 
+        // 使用物件
         console.log(man);
+        // 物件.成員名稱
+        console.log(man.age > 20);
+        // 呼叫函示 or 呼叫物件的方法
+        man.talk();
+        
+        // ------------------------------------
+
+        // 使用json創造物件(寫法較簡便)
+        // {成員名稱：資料, 成員名稱：資料,成員名稱：資料}
+        let woman = {
+            age:18, 
+            name:'Amy',
+            talk:function(){
+            console.log('hi我是',this.name,'年齡',this.age)
+        } };
+        console.log(woman);
+        
     </script>
 
 </body>
