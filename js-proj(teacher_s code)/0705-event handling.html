@@ -6,10 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 7/5 Event-handling</title>
+
+    澎澎 Event-handling 事件處理
     
     <!-- 1. 在哪個標籤上發生什麼事?
          2. 事件種類
          3. 事件對應處的的函式 -->
+
+      <style>
+        .btn{
+            background-color: rgb(210, 154, 202);
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+      </style>
 
 
 
@@ -60,9 +71,44 @@
             elem.style.color = "yellow";
         }
     </script>
+ 
+
+  <!-- 🟠 第3個範例： -->
+  <!-- 注意大小寫
+    ⚠️ background’C’olor
+    ⚠️ font’W‘eight -->
+  
+<h3>事件處理練習（練習3)</h3>
+<span
+    class="btn" 
+    onmouseover = "over(this);" onmouseout = "out(this);"
+    onmousedown = "down(this);" onmouseup ="up(this);"
+> Click me 1</span>
+
+<span
+    class="btn" 
+    onmouseover = "over(this);" onmouseout = "out(this);"
+    onmousedown = "down(this);" onmouseup ="up(this);"
+> Click me 2</span>
+
+<script>
+    function over(btn3){
+        btn3.style.backgroundColor = "#FFD9EC";
+        console.log('hiii')
+    }
+    function out(btn3){
+        btn3.style.backgroundColor = " rgb(210, 154, 202)";
+    }
+    function up(btn3){
+        btn3.style.fontWeight = "normal"; 
+    }
+    function down(btn3){
+        btn3.style.fontWeight = "bold";
+    }
+
+</script>
 
 
-    
 
 
 
