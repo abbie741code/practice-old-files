@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 7/6 html DOM操作</title>
+<!-- 
+     🌟操作標籤物件
+    (1️⃣ 取得標籤物件 2️⃣操作標籤物件的HTML跟css)
+    
+     🌟取出＃id放到變數裡面  -->
+
+    
 
 
 
@@ -19,7 +26,19 @@
 
 </head>
 
+
 <body>
+    <div id ="content"> 123</div>
+
+<script>
+    // 1️⃣ 取得標籤物件 
+    let divElement = document.querySelector("#content")
+    // 2️⃣ 操作標籤物件的HTML跟css
+    divElement.innerHTML = "new content";
+    divElement.style.fontSize = "50px";
+    divElement.style.color = "pink";
+
+</script>
 
 
 
