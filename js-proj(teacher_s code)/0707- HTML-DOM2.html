@@ -1,6 +1,3 @@
-<script>
-    console.log('1');
-</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,11 +10,31 @@
 </head>
 
 <body>
-    <span>About me</span>
-    <span>學經歷</span>
+    <span onclick="changeToAbout();">About me</span>
+    <span onclick="changeToBreed();">品種</span>
     <hr>
-    <div>大家好 我是米寶</div>
-    <div>我是一隻狐狸博美 我長得很可愛</div>
+    <div id="about">大家好 我是米寶</div>
+    <div id="breed" style="display:none;">我是一隻狐狸博美 我長得很可愛</div>
+
+    <script>
+        function changeToAbout(){
+            // 先取得要操作的標籤
+            let aboutDiv = document.querySelector("#about");
+            let breedDiv = document.querySelector("#breed");
+             // 在對標籤做操作
+             aboutDiv.style.display="block";
+             breedDiv.style.display="none";
+        }
+
+        function changeToBreed(){
+            let aboutDiv = document.querySelector("#about");
+            let breedDiv = document.querySelector("#breed");
+
+            aboutDiv.style.display = "none";
+            breedDiv.style.display="block";
+        
+        }
+    </script>
 
    
 
