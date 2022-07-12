@@ -66,10 +66,23 @@
 
        <!-- 🌟練習 -->
     <script>
-        let man= new Object(); // ❤️ 建立空白物件
+        // 建議物件
+        let man= new Object(); // ❤️ 建立空白物件 new Object()
         man.age = 18;  // ❤️ 物件.成員名稱＝資料
         man.name = "米寶";
+        man.talk=function(){
+            console.log("hiiiiii");
+        };
+        //talk是一個function
+
+
+
+        // 使用物件 
         console.log(man);
+        console.log(man.age > 20);// ❤️ 物件.成員名稱
+        man.talk(); 
+        // 呼叫函示 👉(呼叫物件的方法)
+
 
 
     </script>
