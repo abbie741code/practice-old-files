@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7/19 css 兩欄畫面切版</title>
-   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            outline: 1px solid sandybrown;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(154, 144, 144);
+           
+        }
+        .container{
+            height: 100%;
+            display: flex;
+            outline: 5px solid rgb(50, 213, 29);
+        }
+        .banner-txt{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            outline: 5px solid rgb(219, 28, 199);
+        }
+        .banner-txt h1{
+            font-size: 80px;
+           
+
+        }
+        .banner-txt h1 small{
+           display: block;
+           font-style: 53px;
+        
+
+        }
+        .banner-txt h2{}
+        .banner-txt p {}
+
+    </style>
+
 </head>
 
 <body>
@@ -22,7 +61,7 @@
             </div>
         </div>
     </div>
-   
+
 </body>
 
 </html>
