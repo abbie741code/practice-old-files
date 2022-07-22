@@ -16,7 +16,7 @@
             list-style: none;
             font-family: 'Noto Sans TC', sans-serif;
 
-            outline: 1px solid sandybrown;
+            /* outline: 1px solid sandybrown; */
         }
         html, body{
             height: 100%;
@@ -33,13 +33,15 @@
             margin: auto;
         }
         .item{
-            width: 370px;
+            width: 368px;
             margin: 15px;
-            background-color: aliceblue;
-            border: 5px solid #ccc;
+            background-color: #fff;
+            border: 1px solid #ccc;
         }
         .item img{
             width: 100%;
+            /*⚠️ 有一個詭異空間,待研究 */
+            vertical-align: middle;
         }
         .item h2{
             border-bottom: 1px solid #888;
@@ -51,8 +53,27 @@
             line-height: 1.6;
             font-weight: 300;
         }
+        .item .text{
+            padding:20px;
+            /* outline: 5px solid rgb(230, 34, 165); */
+            position: relative;
 
-        
+        }
+        /* 偽類 */
+        .item .text:before{
+            content:'';
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            /* 三角形的斜度 */
+            border-top: 50px solid transparent;
+            /* item的一半 */
+            border-left: 184px solid #fff;
+            border-right: 184px solid #fff;
+            position:absolute;
+            transform: translateY(-100%);
+        }
         
     </style>
 
